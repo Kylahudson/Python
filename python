@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+
+<input type="submit" name="Calculate"
+       id="Calculate" onclick="generate()" value="Calculate">
+</body>
+<script>
+    function generate(){
+     var num1= Math.floor((Math.random()* 100) +1);
+        var num2=Math.floor((Math.random()* 100) + 1);
+        var add=num1 + num2;
+        var sub=num1 - num2;
+        var multiply=num1*num2;
+        var divide=num1/num2;
+        var ab=num1%num2;
+        var BR="<br>";
+        console.log(num1);
+        console.log(num2);
+
+        document.write("The sum of the two numbers is:" + add + BR);
+        document.write("The product of the two numbers is: " + multiply +  BR);
+        document.write("The difference of the two numbers is: "+ sub +  BR);
+        document.write("The quotients of the two numbers is: " + divide +  BR);
+        document.write("The absolute value of the two numbers is: " + ab + BR);
+
+    }
+
+</script>
+
+
+
+
+
+
+
+</html>
